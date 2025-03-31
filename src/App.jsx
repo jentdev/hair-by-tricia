@@ -1,15 +1,16 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 
-import { Navbar, Footer } from './components';
+import { Navbar, Footer, Header, Copyright } from './components';
 
 import { Home, About, Location, Services } from './pages';
 
 
 const App = () => {
   return (
-    <div className="app-container">
+      <div>
       <Navbar />
+      <Header />
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/services' element={<Services />} />
       </Routes>
 
+      <Copyright />
       <Footer />
     </div>
   )
