@@ -22,7 +22,11 @@
 
   /* navbar */
   nav {
-    @apply fixed w-full max-w-[1000px] flex justify-between z-99 top-3 right-3;
+    @apply fixed w-full flex z-99 top-0 right-0 justify-center;
+  }
+
+  nav .logo-nav {
+    @apply flex w-full max-w-[1000px] justify-between p-3;
   }
 
   .social-links {
