@@ -76,12 +76,6 @@
   main {
     @apply w-full h-full;
   }
-  /* main .container {
-    @apply relative w-full flex flex-col justify-center md:translate-x-[10%] lg:translate-x-[20%] translate-y-[50%];
-  }
-  main .welcome-text {
-    @apply w-full sm:w-[80%] md:w-[70%] lg:mt-10 p-10 text-xl flex flex-col gap-3; 
-  } */
   main .white-rect {
     @apply hidden md:block absolute translate-y-[50%] right-20 h-[400px] w-[600px] bg-white/20
   }
@@ -151,24 +145,28 @@
   .service .range {
     @apply flex justify-end;
   }
-  
-  
-  /* .service .range::before {
-    content: '';
-    flex: 1;
-    width: 100%;
-    margin-bottom: 5px;
-    overflow: hidden;
-    border-bottom: 1px dotted black;
-  } */
-  .service .price .style::after {
-    /* @apply content-[''] w-full mb-[5px] overflow-hidden sm:border-b border-dotted; */
-    /* content: '';
-    flex: 1;
-    width: 100%;
-    margin-bottom: 5px;
-    overflow: hidden;
-    border-bottom: 1px dotted black; */
+
+  /* location */
+  .location {
+    @apply w-full max-w-[1000px] flex flex-col gap-10 justify-center py-30 px-15;
+  }
+  .location h1 {
+    @apply text-2xl uppercase font-bold;
+  }
+  .location h3 {
+    @apply text-lg font-bold;
+  }
+  .location .hours .dates {
+    @apply font-bold capitalize;
+  }
+  .location .map {
+    @apply self-center;
+  }
+
+  /* leaflet */
+  /* map container - leaflet */
+  .leaflet-container {
+    @apply w-full aspect-video sm:w-[400px]
   }
 
   /* footer */  
