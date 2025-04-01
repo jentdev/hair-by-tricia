@@ -1,21 +1,21 @@
 export const haircuts = [
     {
-        style: "women's haircut",
+        style: "women's",
         min: 45,
         max: 75,
     },
     {
-        style: "men's haircut",
+        style: "men's",
         min: 25,
         max: 45,
     },
     {
-        style: "children's haircut (under 12)",
+        style: "children's",
         min: 45,
         max: 75,
     },
     {
-        style: "senior haircut",
+        style: "seniors'",
         min: 25,
         max: 40,
     },
@@ -30,15 +30,15 @@ export const haircuts = [
         max: 40,
     },
     {
-        style: "updo/formal styling",
+        style: "updo",
         min: 50,
         max: 85,
     },
 ];
 
-export const hairColor = [
+export const color = [
     {
-        style: "single process color",
+        style: "single process",
         min: 60,
         max: 90,
     },
@@ -64,7 +64,7 @@ export const hairColor = [
     },
 ];
 
-export const hairTreatments = [
+export const treatments = [
     {
         style: "deep conditioning",
         min: 25,
@@ -89,12 +89,12 @@ export const hairTreatments = [
 
 export const extensions = [
     {
-        style: "tape-in extensions",
+        style: "tape-in",
         min: 300,
         max: 999,
     },
     {
-        style: "clip-in extensions",
+        style: "clip-in",
         min: 15,
         max: 40,
     },
@@ -107,18 +107,42 @@ export const extensions = [
 
 export const special = [
     {
-        style: "bridal hair (trial + day of",
+        style: "bridal",
         min: 200,
         max: 350,
     },
     {
-        style: "bridal party hair",
+        style: "bridal party",
         min: 75,
         max: 120,
     },
     {
-        style: "makeup application",
+        style: "makeup",
         min: 40,
         max: 75,
     },
+];
+
+export const priceList = [
+    {
+        type: "haircuts & styling",
+        prices: haircuts,
+    },
+    {
+        type: "hair color",
+        prices: color,
+    },
+    {
+        type: "hair treatments",
+        prices: treatments,
+    },
+    {
+        type: "extensions & add-ons",
+        prices: extensions,
+    },
+    {
+        type: "special services",
+        prices: special,
+    },
+    
 ];
