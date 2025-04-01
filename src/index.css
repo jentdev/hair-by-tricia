@@ -23,11 +23,12 @@
   nav {
     @apply fixed w-full flex z-99 top-0 right-0 justify-center;
   }
-
   nav .logo-nav {
-    @apply flex w-full max-w-[1000px] justify-between p-3;
+    @apply flex w-full max-w-[1000px] justify-between items-center p-3;
   }
-
+  nav .logo {
+    @apply w-15
+  }
   .social-links {
     @apply flex gap-3 items-center;
   }
@@ -116,10 +117,10 @@
     @apply flex flex-col sm:flex-row justify-center items-center gap-2 pb-5;
   }
   .stylist .name-title p {
-    @apply leading-10 text-[12px] sm:text-[15px]
+    @apply leading-10 text-[12px] sm:text-[15px] capitalize;
   }
   .stylist .desc {
-    @apply text-[14px] sm:text-[20px]
+    @apply text-[14px] sm:text-[17px]
   }
 
   /* services */
@@ -136,10 +137,10 @@
     @apply text-xl font-bold uppercase;
   }
   .service .type {
-    @apply flex flex-col gap-5 text-[13px];
+    @apply flex flex-col gap-5 text-[13px] sm:text-[14px] md:text-[15px];
   }
   .service .price {
-    @apply flex flex-col sm:flex-row justify-between border-b border-dotted;
+    @apply flex flex-col sm:flex-row justify-between border-b border-dotted border-dark;
   }
   .service .price:last-child {
     @apply border-none;
@@ -180,7 +181,7 @@
 
   /* copyright */
   .copyright {
-    @apply text-xs w-dvh max-w-[500px] fixed left-0 top-[20vh] rotate-90 origin-bottom-left opacity-50;
+    @apply text-xs max-w-[500px] fixed left-0 top-[20vh] rotate-90 origin-bottom-left opacity-50;
   }
 
 }

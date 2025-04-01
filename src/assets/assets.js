@@ -1,7 +1,9 @@
 import bg from './bg.jpg';
+import logo from './logo.svg';
 
 export const assets = {
     bg,
+    logo,
 };
 
 export const navItems = [
@@ -16,7 +18,7 @@ export const navItems = [
         label: 'services',
         endpoint: '/services',
     },{
-        label: 'contact',
-        endpoint: '/contact',
+        label: 'location',
+        endpoint: '/location',
     },
 ];
