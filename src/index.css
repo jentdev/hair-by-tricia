@@ -82,28 +82,55 @@
     @apply hidden md:block absolute translate-y-[50%] left-[200px] h-[500px] w-[500px] bg-white/20
   }
   
-  /* copyright */
-  .copyright {
-    @apply text-xs w-dvh max-w-[500px] absolute top-[20vh] rotate-90 origin-bottom-left opacity-50;
-  }
-
   /* about  */
   .about {
     @apply py-30 px-15
   }
   .about h2 {
-    @apply text-2xl font-bold uppercase pb-5;
+    @apply text-2xl font-bold uppercase pb-10;
   }
   .about .about-intro {
-    @apply hidden md:block;
+    @apply hidden md:block pb-10;
   }
 
-  /* footer */
-  
+  /* all stylists */
+  .stylists {
+    @apply w-full flex flex-col md:grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5;
+  }
+  .stylist {
+    @apply sm:bg-white/80 sm:text-black flex flex-col pt-3 pb-10 sm:px-3 md:px-5 border-b border-white md:border-none;
+  }
+  .stylist:last-child {
+    @apply border-none;
+  }
+  .stylist img {
+    @apply pb-5 
+  }
+  .stylist h3 {
+    @apply text-lg sm:text-xl md:text-2xl uppercase font-bold self-center;
+  }
+  .stylist .name-title {
+    @apply flex flex-col sm:flex-row justify-center items-center gap-2 pb-5;
+  }
+  .stylist .name-title p {
+    @apply leading-10 text-[12px] sm:text-[15px]
+  }
+  .stylist .desc {
+    @apply text-[14px] sm:text-[20px]
+  }
+
+  /* footer */  
   footer .slogan {
     @apply absolute bottom-7 sm:bottom-10 right-0 sm:right-10 md:right-15 text-[14px] sm:text-2xl md:text-3xl uppercase;
   }
   footer .white-rect {
     @apply absolute bottom-0 right-0 h-1/8 sm:h-1/7 md:h-1/6 w-3/5 bg-white/20
   }
+
+  /* copyright */
+  .copyright {
+    @apply text-xs w-dvh max-w-[500px] fixed top-[20vh] rotate-90 origin-bottom-left opacity-50;
+  }
+
 }
+

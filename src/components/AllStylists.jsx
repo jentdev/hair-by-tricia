@@ -4,11 +4,14 @@ import { stylists } from '../assets/stylists/stylistAssets';
 export const AllStylists = () => {
   return (
     <div className="stylists">
-        {stylists.map(({stylist, img, desc}) => (
+        {stylists.map(({stylist, title, img, desc}) => (
             <div key={stylist} className="stylist">
-                <h3>{stylist}</h3>
+                <div className="name-title">
+                    <h3>{stylist}</h3>
+                    <p>({title})</p>    
+                </div>
                 <img src={img} alt={stylist} />
-                <p>{desc}</p>
+                <p className="desc">{desc}</p>
             </div>
         ))}
     </div>
