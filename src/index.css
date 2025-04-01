@@ -133,20 +133,24 @@
     @apply bg-white/80 text-black p-3 flex gap-5 flex-col;
   }
   .service h3 {
-    @apply text-xl font-bold;
+    @apply text-xl font-bold uppercase;
   }
   .service .type {
-    @apply flex flex-col gap-3;
+    @apply flex flex-col gap-5 text-[13px];
   }
   .service .price {
-    @apply flex flex-col sm:flex-row justify-between;
+    @apply flex flex-col sm:flex-row justify-between border-b border-dotted;
+  }
+  .service .price:last-child {
+    @apply border-none;
   }
   .service .price .style {
-    @apply flex grow;
+    @apply flex capitalize;
   }
   .service .range {
-    @apply self-end border-l border-b border-r border-dotted sm:border-none;
+    @apply flex justify-end;
   }
+  
   
   /* .service .range::before {
     content: '';
@@ -157,7 +161,7 @@
     border-bottom: 1px dotted black;
   } */
   .service .price .style::after {
-    @apply content-[''] grow w-full mb-[5px] overflow-hidden border-b border-dotted;
+    /* @apply content-[''] w-full mb-[5px] overflow-hidden sm:border-b border-dotted; */
     /* content: '';
     flex: 1;
     width: 100%;
@@ -168,7 +172,7 @@
 
   /* footer */  
   footer .slogan {
-    @apply absolute bottom-7 sm:bottom-10  sm:right-10 md:right-15 text-[15px] sm:text-2xl md:text-3xl uppercase;
+    @apply absolute bottom-7 sm:bottom-10 sm:right-10 md:right-15 text-[15px] sm:text-2xl md:text-3xl uppercase;
   }
   footer .white-rect {
     @apply absolute bottom-0 right-0 h-1/8 sm:h-1/7 md:h-1/6 w-4/5 md:w-3/5 bg-white/20
@@ -176,7 +180,7 @@
 
   /* copyright */
   .copyright {
-    @apply text-xs w-dvh max-w-[500px] fixed top-[20vh] rotate-90 origin-bottom-left opacity-50;
+    @apply text-xs w-dvh max-w-[500px] fixed left-0 top-[20vh] rotate-90 origin-bottom-left opacity-50;
   }
 
 }
