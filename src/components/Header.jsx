@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { assets } from '../assets/assets';
+import { AppContext } from '../context/AppContext';
 
 export const Header = () => {
+
+  const { currentPage } = useContext(AppContext);
+
   return (
-    // <header style={{backgroundImage: `url(${assets.bg})`}}>
     <header>
-      <div><img src={assets.bg} alt="" /></div>
+      {
+        currentPage === ''
+        ? <div><img src={assets.bg} alt="" /></div>
+        : ''
+      }
     </header>
   )
 };

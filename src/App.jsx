@@ -9,9 +9,8 @@ import { Home, About, Location, Services } from './pages';
 const App = () => {
   return (
       <div>
-      <Navbar />
+      <Navbar />      
       <Header />
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

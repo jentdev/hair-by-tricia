@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 
 export const Footer = () => {
+
+  const { currentPage } = useContext(AppContext);
   return (
     <footer>
-      
-        <div className="slogan">「 Elevating your beauty with style 」</div>       
-
-      <div className="white-rect"></div>
+        {
+          currentPage === ''
+          ? <>
+            <div className="slogan">「 Elevating your beauty with style 」</div>
+            <div className="white-rect"></div>
+          </>
+          : ''
+        }
+        
     </footer>
   );
 };
